@@ -1,0 +1,366 @@
+/* styles.css */
+/* For the Windows 10 CSS3 project */
+/* (c) 2016 Nitin Seshadri */
+/**/
+body {
+background: url('img/img0_3840x2160.jpg') center top no-repeat;
+background-size: cover;
+overflow-y: hidden;
+margin: 0 0;
+user-select: none;
+-webkit-user-select: none;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+div.desktop {
+width: 100%;
+height: 100vh;
+}
+div.window {
+border: #0078D7;
+border-width: 1px;
+border-style: solid;
+box-shadow: inset 0 0 0 1px rgba(246,246,247,0.92), 0 7px 19px rgba(0,0,0,0.9);
+padding: 0px;
+position: relative;
+display: inline-block;
+overflow: hidden;
+}
+.titleFrame {
+position: relative;
+background: #FFFFFF;
+height: 30px;
+}
+.titleContent {
+position: absolute;
+top: 50%;
+transform: translate(0, -50%)
+}
+.titleText {
+color: black;
+font-family: 'Segoe UI', Tahoma, sans-serif;
+font-weight: 400;
+font-size: 12px;
+display: inline;
+padding: 20px;
+}
+.titleText.noIcon {
+padding-left: 0;
+}
+.titleContent {
+padding: 6px 10px;
+display: inline;
+}
+.iconContainer {
+display: inline;
+position: relative;
+}
+.icon {
+position: absolute;
+top: 50%;
+transform: translate(0, -50%)
+}
+.closeBtn {
+display: inline;
+float: right;
+width: 45px;
+height: 30px;
+font-size: 25px;
+font-family: 'Times New Roman', Times, serif;
+margin: auto auto;
+text-align: center;
+transition: 0.2s;
+}
+.closeBtn:hover {
+background: red;
+color: white;
+}
+div.winbody {
+background: #F0F0F0;
+height: 100%;
+width: 100%;
+overflow: hidden;
+position: relative;
+left: 0;
+top: 0;
+}
+div.menubar {
+background: #FFFFFF;
+font-family: 'Segoe UI', Tahoma, sans-serif;
+font-size: 12px;
+padding: 0 0;
+border-left:none;
+border-right:none;
+border-top:none;
+border-bottom:solid #F0F0F0 2px;
+}
+button.menubarItem {
+background: #FFFFFF;
+font-family: 'Segoe UI', Tahoma, sans-serif;
+font-size: 12px;
+border: 2px solid white;
+padding: 0px 4px;
+transition: 0.1s;
+}
+button.menubarItem:hover, button.menubarItem:active {
+color: black;
+background: #91C9F7;
+border: 2px solid #91C9F7;
+}
+input, textarea {
+-webkit-appearance: none;
+-webkit-border-radius: 0px; 
+border-radius: 0px;
+}
+.winbanner {
+display: block;
+margin: auto auto;
+}
+.wintext {
+display: block;
+margin: auto auto;
+font-family: 'Segoe UI', Tahoma, sans-serif;
+font-size: 9pt;
+font-weight: 400;
+text-align: left;
+padding: 10px;
+}
+.winlink, .winlink:hover, .winlink:active, .winlink:visited {
+color: #0078D7;
+text-decoration: underline;
+}
+#winver {
+position: absolute;
+top: 25px;
+left: 25px;
+}
+#notepad {
+position: absolute;
+top: 75px;
+left: 75px;
+min-width: 320px;
+min-height: 200px;
+width: 640px;
+height: 480px;
+overflow: hidden;
+}
+.dropdown {
+display: none;
+position: absolute;
+background-color: #F2F2F2;
+padding: 2px;
+width: 195px;
+height: auto;
+overflow: auto;
+box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+border: lightgray;
+border-width: 1px;
+border-style: solid;
+}
+.dropdown a {
+color: black;
+text-decoration: none;
+font-family: 'Segoe UI', Tahoma, sans-serif;
+font-size: 9pt;
+display: block;
+padding-left: 30px;
+padding-top: 4px;
+padding-bottom: 4px;
+padding-right: 10px;
+transition: 0.1s;
+}
+.dropdown a:hover {
+background-color: #91C9F7;
+}
+hr.dropdown-separator { 
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+margin-bottom: 0;
+}
+#npOpen {
+position: relative;
+overflow: hidden;
+cursor: default;
+}
+.npFileSel {
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+.textBox {
+background: white;
+font-family: Consolas;
+font-size: 11pt;
+border: #0078D7;
+border-width: 1px;
+border-style: solid;
+padding: 5px; 
+width: 98.25%;
+height: 87.25%;
+overflow: scroll;
+resize: none;
+}
+div.btnFrame {
+padding: 10px;
+margin: auto auto;
+float: right;
+}
+button.winbutton {
+background: #E1E1E1;
+font-family: 'Segoe UI', Tahoma, sans-serif;
+font-size: 9pt;
+font-weight: 400;
+color: black;
+text-decoration: none;
+padding: 3px 20px;
+border: lightgray;
+border-width: 1px;
+border-style: solid;
+transition: 0.1s;
+}
+button.winbutton:hover {
+background: #E5F1FB;
+border: #0078D7;
+border-width: 1px;
+border-style: solid;
+}
+button.winbutton:active {
+background: #CCE4F7;
+}
+div.taskbar {
+width: 100%;
+color: #FFFFFF;
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+height: 42px;
+box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.15);
+background-color: #000000;
+opacity: 0.95;
+z-index: 9998;
+}
+.startIconFrame {
+float:left;
+display: inline-block;
+margin: auto auto;
+text-align: center;
+width: 48px;
+padding-top: 12px;
+padding-bottom: 11px;
+font-size: 17px;
+color: white;
+}
+.startIconFrame:hover {
+color: #429CE3;
+background: #272727; 
+}
+.edgeIconFrame {
+display: inline-block;
+margin: auto auto;
+text-align: center;
+width: 48px;
+padding-top: 11px;
+padding-bottom: 11px;
+font-size: 18px;
+color: #0078D7;
+}
+.edgeIconFrame:hover {
+background: #272727; 
+}
+.otherIconFrame {
+display: inline-block;
+margin: auto auto;
+text-align: center;
+width: 48px;
+padding-top: 11px;
+padding-bottom: 11px;
+font-size: 18px;
+color: white;
+}
+.otherIconFrame:hover {
+background: #272727; 
+}
+.taskSearch {
+float: left;
+display: inline-block;
+margin: auto auto;
+text-align: left;
+width: 331px;
+height: 38px;
+padding-left: 11px;
+font-family: 'Segoe UI', Tahoma, sans-serif;
+font-size: 15px;
+background-color: #3F3F3F;
+color: white;
+border: 1px solid transparent;
+resize: none;
+opacity: 1.0;
+}
+.taskSearch:hover, .taskSearch:active {
+background-color: #4C4C4C;
+}
+.taskSearch:focus {
+background-color: white;
+color: black;
+}
+.SearchResults {
+position: absolute;
+left: 0px;
+bottom: 42px;
+display: none;
+}
+.taskClock {
+position: absolute;
+top: 50%;
+right: 10px;
+transform: translate(0%, -50%);
+display: inline-block;
+margin: auto auto;
+text-align: center;
+width: 55px;
+height: 100%;
+padding-left: 2.5px;
+padding-right: 2.5px;
+font-size: 12px;
+font-family: 'Segoe UI', Tahoma, sans-serif;
+color: white;
+}
+.taskClockContent {
+position: fixed;
+top: 50%;
+left: 50%;
+/* width: 55px; */
+transform: translate(-50%, -50%);
+}
+.showDesktop {
+position: absolute;
+top: 50%;
+right: 0px;
+transform: translate(0, -50%);
+border-left: 1px solid gray;
+width: 4px;
+height: 100%;
+}
+.taskClock:hover, .showDesktop:hover {
+background: #272727;
+}
+.showDesktop:active {
+background: #000000;
+}
+/* Responsive design hides taskbar search box (like windows 10 does) */
+/* when screen width is 800px or lower */
+@media (max-width: 800px) {
+  .taskSearch {
+    display: none;
+  }
+}
