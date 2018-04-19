@@ -125,7 +125,7 @@ $(document).ready(function() {
 		});
 		saveAs(blob, "Untitled.txt");
 	});
-	// Page Setup does nothing
+	// Page Setup does nothing (so far)
 	$("#npPageSetup").click(function() {
 		dropHide();
 	});
@@ -161,23 +161,28 @@ $(document).ready(function() {
 	$("#taskviewIconFrame").click(function() {
 		alert("Not supported yet");
 	});
-	// Start Menu (not implemented yet)
+	// Start Menu
 	// Taskbar icon
 	$("#startIconFrame").click(function() {
-		alert("Not supported yet");
+		$("#startMenu").toggle(300);
+	});
+	// Hide start menu when a window is clicked
+	$('div[class^="window"]').click(function() {
+		$("#startMenu").hide();
 	});
 	// Taskbar search bar
 	$("#taskSearch").focusin(function() {
 		$('div[class^="window"]').css('z-index', '0');
 		$(this).css('z-index', '10');
+		$("#startMenu").hide();
 		$("#SearchResults").show();
 	});
 	$("#taskSearch").focusout(function() {
 		$("#SearchResults").hide();
 		$('#taskSearch').val('');
 	});
-	// Show desktop button in taskbar (No Aero Peek yet)
+	// Show desktop button in taskbar (No Peek yet)
 	$("#showDesktop").click(function() {
-		$('div[class^="window"]').hide();
+		$('div[class^="window"]').toggle();
 	});
 });

@@ -290,6 +290,122 @@ color: white;
 .otherIconFrame:hover {
 background: #272727; 
 }
+.startMenu {
+	position: absolute;
+	background-color: #000000;
+	width: 48px;
+	height: 300px;
+	left: 0;
+	bottom: 42px;
+	opacity: 0.95;
+	z-index: 9998;
+}
+.startApps {
+	position: absolute;
+	left: 48px;
+	width: 266px;
+	height: 300px;
+	bottom: 0px;
+	background: #000000;
+}
+.startApps ul {
+	position: absolute;
+	list-style-type: none;
+	color: white;
+	bottom: 0px;
+    padding: 0px;
+    width: 250px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 11pt;
+}
+.startApps ul li {
+	color: white;
+}
+.startApps ul li a {
+	color: white;
+    text-decoration: none;
+    /*text-transform: uppercase;*/
+    display: block;
+    padding: 5px 10px 5px 10px;
+}
+.startApps ul li a:hover {
+	background: #000000;
+    /*border-left: 10px solid #333;*/
+    color: white;
+}
+.icono {
+	display: inline-block;
+	float:left;
+  	margin: -2px 10px 0 0;
+	color: #4468DC
+}
+.icono2 {
+	display: inline-block;
+	color: white;
+	float: right;
+	margin-right: 15px;
+}
+.btnPower {
+	position: absolute;
+	color: white;
+	bottom: 0px;
+	background: #000000;
+	margin: auto auto;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 11px;
+	left: 12px;
+	font-size: 17px;
+}
+.btnPower:hover {
+	background: #000000;
+	color: red;
+}
+.btnSettings {
+	position: absolute;
+	color: white;
+	bottom: 48px;
+	background: #000000;
+	margin: auto auto;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 11px;
+	left: 12px;
+	font-size: 17px;
+}
+.btnSettings:hover {
+	background: #000000;
+}
+.btnUser {
+	position: absolute;
+	color: white;
+	bottom: 96px;
+	background: #000000;
+	margin: auto auto;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 11px;
+	left: 12px;
+	font-size: 17px;
+}
+.btnUser:hover {
+	background: #000000;
+}
+.btnExpandMenu {
+	position: absolute;
+	color: white;
+	top: 0px;
+	background: #000000;
+	margin: auto auto;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 11px;
+	left: 12px;
+	font-size: 17px;
+}
+.btnExpandMenu:hover {
+	background: #000000;
+}
 .taskSearch {
 float: left;
 display: inline-block;
