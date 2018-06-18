@@ -1,2 +1,5 @@
 # macOS-related stuff
 .DS_Store
+
+# deploy scripts
+deploy.*
